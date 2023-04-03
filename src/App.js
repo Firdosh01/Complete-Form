@@ -12,7 +12,7 @@ function App() {
 
   function ChangeHandler(event) {
     const { name, value, checked, type } = event.target;
-    setformData((prev) => ({ ...prev, [name]: value }))
+    setformData((prev) => ({ ...prev, [name]:type === "checkbox" ? checked: value }))
 
   }
 
