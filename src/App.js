@@ -25,8 +25,9 @@ function App() {
 
 
   return (
-    <div>
+    <div className='wrapper'>
       <form onSubmit={submitHandler}>
+        <div className='container'>
 
         <label htmlFor="firstName">First name</label>
         <br />
@@ -34,7 +35,7 @@ function App() {
           type="text"
           name="firstName"
           id="firstName"
-          placeholder="Love"
+          placeholder="Firdosh"
           value={formData.firstName}
           onChange={ChangeHandler}
         />
@@ -46,7 +47,7 @@ function App() {
           type="text"
           name="lastName"
           id="lastName"
-          placeholder="Babbar"
+          placeholder="Ansari"
           value={formData.lastName}
           onChange={ChangeHandler}
         />
@@ -58,7 +59,7 @@ function App() {
           type="email"
           name="email"
           id="email"
-          placeholder="love@abcd.com"
+          placeholder="xyz@abcd.com"
           value={formData.email}
           onChange={ChangeHandler}
         />
@@ -127,6 +128,8 @@ function App() {
           value={formData.postalcode}
           onChange={ChangeHandler}
         />
+                </div>
+
 
         <br />
         <br />
